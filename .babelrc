@@ -1,0 +1,4 @@
+{
+  "presets": ["es2015"],
+  "plugins": ["lodash","babel-plugin-add-module-exports"]
+}
