@@ -28,7 +28,7 @@ module.exports = {
        devices:['browser'],
        message:` {appname} uygulamanızda hata oluştu, email adresinizi kontrol edin.`,
        cron:{
-         now:false
+         now:true
        }
      },
      slack:{
