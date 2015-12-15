@@ -29,7 +29,7 @@
                   <div class="contentEditableContainer contentTextEditable" style="margin: 0;">
                     <div class="contentEditable" style="margin: 0;">
                       <p style="text-align: center;margin: 0;font-family: Georgia,Time,sans-serif;font-size: 26px;color: #222222;">
-                      <span style="color:#1A54BA;"> {title} </span> </p>
+                      <span style="color:#1A54BA;"> <%= title %> </span> </p>
                     </div>
                   </div>
                 </td>
@@ -58,7 +58,7 @@
                         <td align="left">
                           <div class="contentEditableContainer contentTextEditable" style="margin: 0;">
                             <div class="contentEditable" align="center" style="margin: 0;">
-                              <h1 style="text-align: left;color: #222222;font-size: 19px;font-weight: normal;margin: 0;">{name}</h1>
+                              <h1 style="text-align: left;color: #222222;font-size: 19px;font-weight: normal;margin: 0;"> <%= name %></h1>
                             </div>
                           </div>
                         </td>
@@ -71,7 +71,7 @@
                           <div class="contentEditableContainer contentTextEditable" style="margin: 0;">
                             <div class="contentEditable" align="center" style="margin: 0;">
                               <p style="text-align: left;color: #999999;font-size: 14px;font-weight: normal;line-height: 19px;margin: 0;">
-                                {body}
+                                <%- body %>
                                 <br>
 
                               </p>
@@ -112,9 +112,9 @@
                             <p style="text-align: left;color: #CCCCCC;font-size: 12px;font-weight: normal;line-height: 20px;margin: 0;">
                               <span style="font-weight:bold;">Seven email error handling! </span>
                               <br>
-                              Copyright {year}
+                              Copyright <%= year %>
                               <br>
-                              powered by {author}
+                              powered by <%= author %>
                             </p>
                           </div>
                         </div>
