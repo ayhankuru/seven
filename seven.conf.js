@@ -1,5 +1,6 @@
 module.exports = {
      appname:'Foobar',
+     timeout:12000,
      template:{
        path:__dirname+'/template/hero.tmp',
        params:{
@@ -19,22 +20,24 @@ module.exports = {
        list:['cobaimelan@gmail.com','cobaimelan@yandex.com.tr'],
        sender:' {appname}  <johndoe@gmail.com>',
        cron:{
-         now:true
+         now:false
        }
      },
      pushbullet:{
-       uri:process.env.bulletUri,
-       apikey:process.env.bulletApikey,
-       message:` {appname} uygulamanızda hata oluştu, email adresini kontrol edin.`,
+       apikey:process.env.pbulletapikey,
+       devices:['browser'],
+       message:` {appname} uygulamanızda hata oluştu, email adresinizi kontrol edin.`,
        cron:{
-         now:true
+         now:false
        }
      },
-     hubot:{
-       slackapikey:process.env.slackkey,
-       message:` {appname} uygulamanızda hata oluştu, email adresini kontrol edin.`,
+     slack:{
+       apikey:process.env.slackapikey,
+       channels:['general'],
+       users:['slackbot'],
+       message:` {appname} uygulamanızda hata oluştu, email adresinizi kontrol edin.`,
        cron:{
-         now:true
+         now:false
        }
      }
 }
