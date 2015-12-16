@@ -1,6 +1,5 @@
 module.exports = {
      appname:'Foobar',
-     timeout:12000,
      template:{
        path:__dirname+'/template/hero.tmp',
        params:{
@@ -28,7 +27,7 @@ module.exports = {
        devices:['browser'],
        message:` {appname} uygulamanızda hata oluştu, email adresinizi kontrol edin.`,
        cron:{
-         now:true
+         now:false
        }
      },
      slack:{
