@@ -22,11 +22,11 @@ module.exports = {
      pushbullet:{
        apikey:process.env.pbulletapikey,
        devices:['browser'],
-       cron:false
+       cron:'2 minute'
      },
      slack:{
        apikey:process.env.slackapikey,
        channels:['general'],
-       cron:false
+       cron:'10 minute'
      }
 }
