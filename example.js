@@ -9,5 +9,5 @@ var sevenx = new Seven();
 //  throw new Error('Oh No!');
 //}, 2000);
 sevenx.error(new Error('Hey Hoy2'),{user:"ayhankuru",id:124543});
-sevenx.error(new Error('Hey Hoy33'));
+sevenx.error(new Error('Hey Hoy334444'));
 sevenx.error(new Error('Hey Hoy2'));
