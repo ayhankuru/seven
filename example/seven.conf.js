@@ -16,15 +16,18 @@ module.exports = {
          }
        },
        list:['cobaimelan@gmail.com','cobaimelan@yandex.com.tr'],
-        cron:false
+       sender:' {appname}  <johndoe@gmail.com>',
+       cron:'24 hour'
      },
      pushbullet:{
        apikey:process.env.pbulletapikey,
+       message:` {appname} uygulamanızda hata oluştu, email adresinizi kontrol edin.`,
        devices:['browser']
      },
      slack:{
        apikey:process.env.slackapikey,
+       message:` {appname} uygulamanızda hata oluştu, email adresinizi kontrol edin.`,
        channels:['general'],
-       cron:false
+       cron:'5 hour'
      }
 }
