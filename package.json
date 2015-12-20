@@ -29,10 +29,11 @@
     "every-time": "0.0.0",
     "failing-line": "^0.1.0",
     "format-text": "0.0.3",
-    "lowdb": "^0.11.1",
+    "level-json": "^1.0.0",
     "nodemailer": "^1.10.0",
     "object-assign": "^4.0.1",
     "pushbullet": "^1.4.3",
-    "slackbots": "^0.5.0"
+    "slackbots": "^0.5.0",
+    "uid": "0.0.2"
   }
 }

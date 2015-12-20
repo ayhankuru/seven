@@ -17,12 +17,12 @@ module.exports = {
          }
        },
        list:['cobaimelan@gmail.com','cobaimelan@yandex.com.tr'],
-       cron:false
+        cron:'30 minute'
      },
      pushbullet:{
        apikey:process.env.pbulletapikey,
        devices:['browser'],
-       cron:'2 minute'
+        cron:'20 minute'
      },
      slack:{
        apikey:process.env.slackapikey,
