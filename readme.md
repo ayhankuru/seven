@@ -18,6 +18,30 @@ npm install --save seven
 import Seven from 'seven';
 
 const seven = new Seven();
+
+
+
+fs.readFile('./blaxx',(err,content)=>{
+  if(err){
+    seven.error(err);
+  }
+})
+
+// or
+
+function(msg){
+  if(msg){
+    seven.error(new Error('msg not found!'));
+  }
+
+}
+ // or type error  env SEVEN='active' need..
+
+ true;
+ 314156 + err++;
+ false;
+
+
 ```
 ## Configure
 sample configuration file
