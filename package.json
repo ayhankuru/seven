@@ -12,6 +12,9 @@
   },
   "keywords": [
     "mail",
+    "notification",
+    "slack",
+    "pushbullet"
     "error",
     "handling"
   ],
@@ -29,7 +32,7 @@
     "every-time": "0.0.0",
     "failing-line": "^0.1.0",
     "format-text": "0.0.3",
-    "level-json": "^1.0.0",
+    "moment": "^2.10.6",
     "nodemailer": "^1.10.0",
     "object-assign": "^4.0.1",
     "pushbullet": "^1.4.3",

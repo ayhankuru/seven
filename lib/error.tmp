@@ -1,0 +1,10 @@
+
+<b><span style="color:red"><%= err.name %> </span> <span style="color:grey"><%= filename %></span> </b><br>
+<span style="color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v</span><br>
+<span style="color:grey"><%= (xx[0].line-2) %> <%= (code[0]) %> </span><br>
+<span style="color:black"><b><%= (xx[0].line-1) %>: <%= (code[1]%></b></span><br>
+<span style="color:grey"><%= (xx[0].line-0) %>: <%= (code[2]) %></span><br>
+<span style="color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</span><br>
+<span style="color:grey"><%= err.message %><br/>
+<%-fakestack %>
+</span>

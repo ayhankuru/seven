@@ -1,7 +1,6 @@
 module.exports = {
      appname:'Foobar',
      template:{
-       path:__dirname+'/template/hero.tmp',
        params:{
          title:`Uygulamada hata oluştu : {appname} `,
          year:new Date().getFullYear(),
@@ -17,16 +16,15 @@ module.exports = {
          }
        },
        list:['cobaimelan@gmail.com','cobaimelan@yandex.com.tr'],
-        cron:'30 minute'
+        cron:false
      },
      pushbullet:{
        apikey:process.env.pbulletapikey,
-       devices:['browser'],
-        cron:'20 minute'
+       devices:['browser']
      },
      slack:{
        apikey:process.env.slackapikey,
        channels:['general'],
-       cron:'10 minute'
+       cron:false
      }
 }
