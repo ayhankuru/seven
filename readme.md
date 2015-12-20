@@ -102,3 +102,7 @@ watch uncaught nodejs errors
 ```sh
 env SEVEN='active' node example.js
 ```
+
+![Slack notification](./slack.png)
+![Pushbullet notification](./pushbullet.png)
+![Email Example](./mail.png)
